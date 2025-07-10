@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skripts | Frozen Development</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">Frozen Development</div>
+    <nav>
+      <a href="#">Udforsk produkter</a>
+      <a href="#">Udviklere</a>
+      <a href="#">Om Os</a>
+    </nav>
+    <div class="actions">
+      <input type="text" placeholder="Søg" />
+      <button>Log ind med Discord</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <aside class="filter">
+      <h3>Filtre produkter</h3>
+      <button>Plugins</button>
+      <button class="active">Skripts</button>
+      <button>Setups</button>
+      <button>Maps</button>
+    </aside>
+
+    <section class="products">
+      <div class="search-sort">
+        <input type="text" placeholder="Søg efter det helt rigtige produkt" />
+        <button>Sorter</button>
+      </div>
+
+      <div class="product-grid">
+        <!-- Produktkort -->
+        <div class="product-card">
+          <img src="img/admin.png" alt="Admin Panel">
+          <div class="info">
+            <div class="badges">
+              <span class="badge skript">Skript</span>
+              <span class="badge sale">På udsalg</span>
+            </div>
+            <div class="title">Admin Panel</div>
+            <div class="price">15 DKK <span class="old-price">20 DKK</span></div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/straf.png" alt="Staff Straf Menu">
+          <div class="info">
+            <div class="badges">
+              <span class="badge skript">Skript</span>
+              <span class="badge sale">På udsalg</span>
+            </div>
+            <div class="title">Staff Straf Menu</div>
+            <div class="price">50 DKK <span class="old-price">70 DKK</span></div>
+          </div>
+        </div>
+
+        <!-- Tilføj flere produkter her -->
+      </div>
+    </section>
+  </main>
+</body>
+</html>

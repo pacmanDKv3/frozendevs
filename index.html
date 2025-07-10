@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frozen Development - Minecraft Webshop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #0077ff;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .discord-btn {
+      background: #5865F2;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .categories {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 30px auto;
+      max-width: 1000px;
+    }
+    .category {
+      flex: 1 1 200px;
+      max-width: 220px;
+      height: 100px;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      cursor: pointer;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .skripts { background: url('https://i.imgur.com/xMsRNJk_d.webp?maxwidth=760&fidelity=grand') no-repeat center/cover; }
+    .plugins { background: url('https://i.imgur.com/KVXQpzq_d.webp?maxwidth=760&fidelity=grand') no-repeat center/cover; }
+    .maps { background: url('https://i.imgur.com/JiZeiQs_d.webp?maxwidth=760&fidelity=grand') no-repeat center/cover; }
+    .setups { background: url('https://i.imgur.com/uxsuaLM_d.webp?maxwidth=760&fidelity=grand') no-repeat center/cover; }
+
+    .products-section {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .products-section h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .products-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+      padding-bottom: 10px;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 10px;
+      min-width: 250px;
+      flex: 0 0 auto;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+      width: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .product-card .info {
+      padding: 10px;
+    }
+    .product-card .title {
+      font-weight: bold;
+      font-size: 16px;
+      margin: 5px 0;
+    }
+    .price-tag {
+      background: #FFDC00;
+      color: #333;
+      font-weight: bold;
+      padding: 5px 8px;
+      border-radius: 5px;
+    }
+    .old-price {
+      text-decoration: line-through;
+      color: #999;
+      font-size: 14px;
+      margin-left: 5px;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Frozen Development</div>
+    <nav>
+      <a href="#">Udforsk produkter</a>
+      <a href="#">Udviklere</a>
+      <a href="#">Om Os</a>
+    </nav>
+    <button class="discord-btn">Log ind med Discord</button>
+  </header>
+
+  <div class="categories">
+    <div class="category skripts" onclick="location.href='sider/skripts.html'">Skripts</div>
+    <div class="category plugins" onclick="location.href='sider/plugins.html'">Plugins</div>
+    <div class="category maps" onclick="location.href='sider/maps.html'">Maps</div>
+    <div class="category setups" onclick="location.href='sider/setups.html'">Setups</div>
+  </div>
+
+  <div class="products-section">
+    <h2>Mest populære produkter</h2>
+    <div class="products-container">
+      <div class="product-card">
+        <img src="sider/img/bandesystem.png" alt="Bande Plugin">
+        <div class="info">
+          <div class="title">Avanceret Bande System</div>
+          <div class="price-tag">260 DKK <span class="old-price">350 DKK</span></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="sider/img/cellesystem.png" alt="Celle System">
+        <div class="info">
+          <div class="title">Celle System</div>
+          <div class="price-tag">185 DKK <span class="old-price">250 DKK</span></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="sider/img/itemflip.png" alt="ItemFlip">
+        <div class="info">
+          <div class="title">ItemFlip (MySQL)</div>
+          <div class="price-tag">185 DKK <span class="old-price">250 DKK</span></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="sider/img/tab.png" alt="Prison Tab">
+        <div class="info">
+          <div class="title">Prison Tab</div>
+          <div class="price-tag">Pris på forespørgsel</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Frozen Development - Alle rettigheder forbeholdes
+  </footer>
+
+
+  
+</body>
+</html>
